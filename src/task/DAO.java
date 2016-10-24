@@ -7,15 +7,15 @@ import javax.swing.JOptionPane;
 import java.sql.ResultSet;
 
 public class DAO implements ProInter {
-	/*public void update_product(Product product){           //update
+	public void update_product(Product product){           //update
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1","root", "eslam122");
 		PreparedStatement psmt = conn.prepareStatement("update Product set Type=?, Manufacturer=?, Prod_Date=?, Exp_Date=? where Product_id = ?");
 		psmt.setString(1,product.getType());
 		psmt.setString(2,product.getMan());
-		psmt.setString(3,product.getExp());
-		psmt.setString(4,product.getPro());
+		psmt.setString(3,product.getPro());
+		psmt.setString(4,product.getExp());
 		psmt.setString(5,product.getID());
 		int i = psmt.executeUpdate();
 		if (i > 0) {
@@ -28,12 +28,12 @@ public class DAO implements ProInter {
 		catch(Exception e){
 			JOptionPane.showMessageDialog(null, e);
 		}
-	}*/
+	}
 		
 
 
 
-	/*public void insert_product(Product product){            //insert
+	public void insert_product(Product product){            //insert
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1","root", "eslam122");
@@ -41,8 +41,8 @@ public class DAO implements ProInter {
 		psmt.setString(1,product.getID());
 		psmt.setString(2,product.getType());
 		psmt.setString(3,product.getMan());
-		psmt.setString(4,product.getExp());
-		psmt.setString(5,product.getPro());
+		psmt.setString(4,product.getPro());
+		psmt.setString(5,product.getExp());
 		
 		int i = psmt.executeUpdate();
 		if (i > 0) {
@@ -56,12 +56,12 @@ public class DAO implements ProInter {
 			JOptionPane.showMessageDialog(null, e);
 		}
 	}
-}*/
+
 	
 	
 	
 	
-	/*public void delete_product(String id){           //delete
+	public void delete_product(String id){           //delete
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1","root", "eslam122");
@@ -80,14 +80,14 @@ public class DAO implements ProInter {
 			}
 	
 }
-}*/
+
 	
 	
 	
 	
 	
 	
-	/*public void retrieve_product(String manufacturer) {        //retrieve
+	public void retrieve_product(String manufacturer) {        //retrieve
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			String sql = "select Product_id, Type, Prod_Date, Exp_Date from Product where Manufacturer = ?";
@@ -114,8 +114,9 @@ public class DAO implements ProInter {
 					
 						}
 
-	}*/
-}
+	}
+	}
+
 	
 
 	
